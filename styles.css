@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica;
+  font-size: 18px;
+
+
+  background-color: black;
+}
+
+.urna {
+
+  background-color: rgb(255, 213, 162);
+  padding: 50px;
+
+  width: 1280px ;
+  height: 500px ;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+.leftside {
+  width: 60% ;
+  height: 100% ;
+  background-image: linear-gradient(to right, white, gray);
+  border: solid black 4px;
+  margin-right: 40px;
+}
+
+.numberschosen {
+  display: flex;
+}
+
+.numberschosen p {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.information {
+  display: flex;
+  justify-content: space-around;
+}
+
+.leftupperside {
+  height: 65% ;
+  margin: 25px 40px;
+}
+
+.leftupperside h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.leftleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.leftdownside {
+  padding-left: 10px;
+  border-top: solid black 4px;
+}
+
+
+
+
+
+.rightside {
+  width: 30% ;
+  height: 100% ;
+  background-color: #722F37;
+  border: solid #722F37 4px
+}
+
+button {
+  box-shadow: 4px 4px grey;
+}
+
+
+.numberbuttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.numberbuttons button {
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding: 10px 30px;
+  font-size: 40px;
+}
+
+
+
+.buttonline {
+  display: flex;
+  justify-content: center;
+}
+.buttonline button {
+
+  color: black;
+  margin: 40px 10px;
+  padding: 10px 5px;
+  font-size: 20px;
+}
+
+#branco {
+  background-color: white;
+}
+#laranja {
+  background-color: orange;
+}
+#verde {
+  background-color: green;
+}
