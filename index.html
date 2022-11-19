@@ -10,6 +10,8 @@
 
   <body>
     
+    <p id="feedback"></p>
+
     <div class="urna">
 
       <div class="leftside">
@@ -25,17 +27,17 @@
             <div class="leftleft">
   
               <div class="numberschosen">
-                <p>1</p>
-                <p>0</p>
+                <p id="primeiroDigito">0</p>
+                <p id="segundoDigito">0</p>
               </div>
   
-              <p><b>Nome:</b> Neymar Jr</p>
-              <p><b>País:</b> Brasil</p>
+              <p><b>Nome:</b><a id="nomeJogador"></a></p>
+              <p><b>País:</b><a id="nomePais"></a></p>
   
             </div>
   
             <div class="leftright">
-              <img src="./playerimages/neymar.jpg" alt="Foto do Jogador" width="200px" height="250px">
+              <img id="imagemJogador" src="./playerimages/default.jpg" alt="Foto do Jogador" width="200px" height="250px">
             </div>
   
           </div>
@@ -55,22 +57,22 @@
       <div class="rightside">
 
         <div class="numberbuttons">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>0</button>
+          <button onclick=changeNumber(1)>1</button>
+          <button onclick=changeNumber(2)>2</button>
+          <button onclick=changeNumber(3)>3</button>
+          <button onclick=changeNumber(4)>4</button>
+          <button onclick=changeNumber(5)>5</button>
+          <button onclick=changeNumber(6)>6</button>
+          <button onclick=changeNumber(7)>7</button>
+          <button onclick=changeNumber(8)>8</button>
+          <button onclick=changeNumber(9)>9</button>
+          <button onclick=changeNumber(0)>0</button>
         </div>
 
         <div class="buttonline">
-          <button id="branco">BRANCO</button>
-          <button id="laranja">CORRIGE</button>
-          <button id="verde">CONFIRMA</button>
+          <button onclick=branco() id="branco">BRANCO</button>
+          <button onclick=reset() id="laranja">CORRIGE</button>
+          <button onclick=confirm() id="verde">CONFIRMA</button>
         </div>
 
       </div>
